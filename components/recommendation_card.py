@@ -27,8 +27,8 @@ class RecommendationCard(BoxLayout):
         pick_text = "Pick Again" if is_picked else "Pick"
 
         self.row = BoxLayout(size_hint_y=None, height=dp(42), spacing=dp(8))
-        pick_btn = RoundedButton(text=pick_text, bg_color=(0.26, 0.62, 0.57, 1), disabled_color=(0.22, 0.25, 0.3, 1), color=(1, 1, 1, 1), font_size=sp(13), radius=13)
-        done_btn = RoundedButton(text=action_text, bg_color=(0.23, 0.29, 0.35, 1), disabled_color=(0.21, 0.24, 0.28, 1), color=(0.95, 0.98, 0.97, 1), font_size=sp(13), radius=13)
+        pick_btn = RoundedButton(text=pick_text, bg_color=(0.22, 0.35, 0.50, 1), disabled_color=(0.18, 0.22, 0.28, 1), color=(0.95, 0.98, 0.97, 1), font_size=sp(13), radius=13)
+        done_btn = RoundedButton(text=action_text, bg_color=(0.20, 0.25, 0.32, 1), disabled_color=(0.18, 0.21, 0.26, 1), color=(0.95, 0.98, 0.97, 1), font_size=sp(13), radius=13)
 
         pick_btn.bind(on_release=lambda *_: on_pick(category, item.get("id")))
         done_btn.bind(on_release=lambda *_: on_consume(category, item))

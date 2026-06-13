@@ -5,7 +5,7 @@ from kivy.uix.togglebutton import ToggleButton
 
 
 class SoftTabButton(ToggleButton):
-    def __init__(self, bg_normal=(0.19, 0.23, 0.29, 1), bg_active=(0.26, 0.62, 0.57, 1), **kwargs):
+    def __init__(self, bg_normal=(0.17, 0.21, 0.27, 1), bg_active=(0.22, 0.35, 0.50, 1), **kwargs):
         super().__init__(background_normal="", background_down="", background_color=(0, 0, 0, 0), **kwargs)
         self.bg_normal = bg_normal
         self.bg_active = bg_active

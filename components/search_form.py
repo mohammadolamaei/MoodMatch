@@ -132,8 +132,8 @@ class SearchForm(BoxLayout):
         self.grid.add_widget(self.error)
 
         btn_row = BoxLayout(size_hint_y=None, height=dp(46), spacing=dp(8))
-        self.find_btn = RoundedButton(text="Find Recommendations", bg_color=(0.26, 0.62, 0.57, 1), disabled_color=(0.23, 0.26, 0.31, 1), color=(1, 1, 1, 1), radius=15)
-        self.clear_btn = RoundedButton(text="Clear", bg_color=(0.22, 0.28, 0.34, 1), disabled_color=(0.22, 0.25, 0.3, 1), color=(0.95, 0.98, 0.97, 1), radius=15)
+        self.find_btn = RoundedButton(text="Find Recommendations", bg_color=(0.22, 0.35, 0.50, 1), disabled_color=(0.18, 0.22, 0.28, 1), color=(0.95, 0.98, 0.97, 1), radius=15)
+        self.clear_btn = RoundedButton(text="Clear", bg_color=(0.20, 0.25, 0.32, 1), disabled_color=(0.18, 0.21, 0.26, 1), color=(0.95, 0.98, 0.97, 1), radius=15)
         self.find_btn.bind(on_release=lambda *_: self.submit())
         self.clear_btn.bind(on_release=lambda *_: self.clear())
 

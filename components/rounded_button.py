@@ -4,12 +4,13 @@ from kivy.uix.button import Button
 
 
 class RoundedButton(Button):
-    def __init__(self, bg_color=(0.26, 0.62, 0.57, 1), radius=14, disabled_color=(0.24, 0.28, 0.32, 1), **kwargs):
+    def __init__(self, bg_color=(0.20, 0.52, 0.50, 1), radius=14, disabled_color=(0.18, 0.21, 0.25, 1), **kwargs):
         super().__init__(background_normal="", background_down="", background_color=(0, 0, 0, 0), **kwargs)
         self.bg_color = bg_color
         self.disabled_bg_color = disabled_color
         self.radius_value = radius
         self.padding = [dp(12), dp(8), dp(12), dp(8)]
+        self.color = (0.94, 0.97, 0.97, 1)
 
         with self.canvas.before:
             self._bg_color_instruction = Color(*self.bg_color)
