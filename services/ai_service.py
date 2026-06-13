@@ -7,7 +7,7 @@ import requests
 
 from utils.helpers import fill_missing_recommendations, normalize_response, parse_json_text
 
-API_KEY = os.getenv("MOODMATCH_API_KEY", "dont have api key yet. wait please XD")
+API_KEY = os.getenv("MOODMATCH_API_KEY", "sk-wmezTZy8Ad2Fhet02Jbh3jylad58Y1q7Io618BjYIxTsCv9O")
 API_BASE_URL = os.getenv("MOODMATCH_API_BASE_URL", "https://api.gapgpt.app/v1").rstrip("/")
 API_MODEL = os.getenv("MOODMATCH_API_MODEL", "deepseek-v4-flash")
 
@@ -20,7 +20,7 @@ class AIService:
         self.timeout = (10, 60)
 
     def get_recommendations(self, payload):
-        if not API_KEY or API_KEY.startswith("wait, gonna buy an api."):
+        if not API_KEY or API_KEY.startswith("sk-wmezTZy8Ad2Fhet02Jbh3jylad58Y1q7Io618BjYIxTsCv9O"):
             return False, "Missing API key. Set MOODMATCH_API_KEY."
 
         prompt = self._build_prompt(payload)
