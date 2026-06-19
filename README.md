@@ -2,6 +2,37 @@ MoodMatch
 
 MoodMatch is a small Kivy app that suggests movies, books, and games based on age, mood, and feeling with the help of ai recommendations.
 
+## Screenshots
+
+### Default View
+
+![Default View](Screenshots/default-view.png)
+
+### Searching State
+
+![Searching State](Screenshots/searching-state.png)
+
+### Found State
+
+![Found State](Screenshots/found-state.png)
+
+### Movie Options
+
+![Movie Options](Screenshots/Movie-options.png)
+
+### Book Options
+
+![Book Options](Screenshots/Book-options.png)
+
+### Game Options
+
+![Game Options](Screenshots/Game-options.png)
+
+### Mood Options
+
+![Mood Options](Screenshots/mood-options.png)
+
+
 Features
 
 - Simple form for age, gender, mood, and feeling
